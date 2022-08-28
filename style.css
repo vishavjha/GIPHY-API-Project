@@ -1,0 +1,63 @@
+:root {
+--BG-COLOR: #ffffff;
+--BG-SEC-COLOR: #f3f3f3;
+--TEXT-COLOR: #202020;
+--ACCENT-COLOR: #391b5a;
+--ACCENT-TEXT-COLOR: #fefefe;
+--ERROR-BG: #ff5559;
+--FONT: 'Helvetica';
+}
+body {
+background: var(--BG-COLOR);
+color: var(--TEXT-COLOR);
+font-family: var(--FONT);
+}
+input:focus {
+outline: none;
+}
+.container {
+width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+.appname-c {
+color: var(--ACCENT-COLOR);
+}
+.searchbox-c,
+.searchbtn-c,
+.btn-c {
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+border: 0.5px solid var(--ACCENT-COLOR);
+}
+.btn-c {
+background: var(--ACCENT-COLOR);
+color: var(--ACCENT-TEXT-COLOR);
+}
+.searchbtn-c {
+font-weight: bold;
+}
+.search-container-c {
+display: grid;
+grid-template-columns: 90% 10%;
+}
+.result-container-c {
+display: grid;
+grid-template-columns: auto auto auto auto;
+margin-top: 30px;
+}
+.result-item-c {
+margin: 5px;
+padding: 10px;
+background: var(--BG-SEC-COLOR);
+min-width: 300px;
+overflow: hidden;
+border-radius: 10px;
+}
+.errorbox-c {
+background: var(--ERROR-BG);
+padding: 10px;
+border-radius: 5px;
+margin: 10px;
+}
